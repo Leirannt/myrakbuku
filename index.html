@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Rak Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+  <h1>Aplikasi Rak Buku</h1>
+</header>
+
+<div id="toast">Data buku berhasil disimpan!</div>
+
+<div class="wrapper">
+  <div class="container bg-white shadow" id="add-todo">
+    <h2 class="container-header text-center">Mengolah data buku</h2>
+    <form class="form" action="#" id="form">
+      <div class="form-group form-title">
+        <label for="title">Masukkan judul buku</label>
+        <input type="text" id="title" name="title" required>
+      </div>
+      <div class="form-group form-title">
+        <label for="date">Masukkan nama author</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group form-title">
+        <label for="date">Masukkan tahun buku</label>
+        <input type="text" id="date" name="date" required>
+      </div>
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="completed-checkbox">
+        <label for="completed-checkbox">Sudah selesai dibaca</label>
+      </div>
+
+      <input type="submit" value="Submit" name="Submit" class="btn-submit">
+    </form>
+  </div>
+  
+  <div class="container bg-white shadow">
+    <h2 class="container-header text-center">Cari Buku</h2>
+    <div class="form" id="search-form">
+      <div class="form-group form-title">
+        <label for="search-title">Masukkan judul buku</label>
+        <input type="text" id="search-title" name="search-title">          
+      </div>
+      <button onclick="searchBooks()" type="button" class="btn-submit">Cari</button>
+    </div>
+    <div id="search-results" class="list-item"></div>
+  </div>
+
+  <div class="container">
+    <h2 class="container-header">Belum selesai dibaca</h2>
+    
+    <div class="list-item" id="todos">
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="container-header">Sudah Selesai dibaca</h2>
+    <div class="list-item" id="completed-todos">
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js" type="text/javascript"></script>
+
+<footer>
+  <div class="toTop">
+      <a href="#top"><img src="assets/totop.png" alt="to top pict"></a>
+  </div>
+  <p>Content by Ariel Pabibak Pali' Mallua' production &#169; 2024 Ariel_P_P_M.</p>
+  <p>webpage &#169; Ariel_P_P_M</p>
+</footer>
+
+
+
+</body>
+</html>
